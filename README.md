@@ -8,6 +8,8 @@ After working with the LTSI (Learning and Support Technology and Innovation) tea
 
 This bot will be powered using Amazon Lex and be roughly based on the [Amazon Lex Support Bot Tutorial](https://github.com/aws-samples/amazon-lex-support-bot/edit/master/README.md) although this specific bot will also incorporate a lambda function that ties into SNS and possibly even Amazon Connect (depending on time constraints)
 
+Currently a ticket handler needs to manually read through every incoming ticket and assign it accordingly which can often be a tedious process. 
+
 Before I start, I'd like to acknowledge the creators of the original AWS Support Bot Guide: Rumi Olsen (rumi@amazon.com) and Ryan Vanderwerf (ryvan@amazon.com)
 
 Lets go over the components used in this bot:
@@ -35,3 +37,8 @@ Lets go over the components used in this bot:
 "Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
 
 The A2A pub/sub functionality provides topics for high-throughput, push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications. Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems including Amazon SQS queues, AWS Lambda functions and HTTPS endpoints, for parallel processing, and Amazon Kinesis Data Firehose. The A2P functionality enables you to send messages to users at scale via SMS, mobile push, and email." (aws.amazon.com/sns)
+
+#### Sagemaker
+
+"Amazon SageMaker helps data scientists and developers to prepare, build, train, and deploy high-quality machine learning (ML) models quickly by bringing together a broad set of capabilities purpose-built for ML."
+
