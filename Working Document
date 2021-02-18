@@ -1,0 +1,11 @@
+This document is to show my thinking process and how I plan on working through the problem
+
+First step would be designing an inital statement. The initial statement should be the decision between the request being sent to the helpdesk or to LTSI. 
+
+The bot will have to hook up into UVIC's support website so it will have to be web-friendly
+
+To maintain accordance with UVIC's accessibility policy, we will integrate Amazon Polly and Transcribe into the bot so that we can use speech to text and text to speech
+
+First step would be creating an IAM acess role for the bot
+
+Second Step would be creating a S3 bucket to hold the bot's properties.
