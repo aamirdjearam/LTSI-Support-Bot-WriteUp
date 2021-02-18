@@ -8,7 +8,7 @@ After working with the LTSI (Learning and Support Technology and Innovation) tea
 
 This bot will be powered using Amazon Lex and be roughly based on the [Amazon Lex Support Bot Tutorial](https://github.com/aws-samples/amazon-lex-support-bot/edit/master/README.md) although this specific bot will also incorporate a lambda function that ties into SNS and possibly even Amazon Connect (depending on time constraints)
 
-Currently a ticket handler needs to manually read through every incoming ticket and assign it accordingly which can often be a tedious process. 
+Currently a ticket handler needs to manually read through every incoming ticket in our RT system and assign it accordingly which can often be a tedious process. The bot's objective is to mitigate this and to answer simple questions by redirecting clients to the correct resources.
 
 Before I start, I'd like to acknowledge the creators of the original AWS Support Bot Guide: Rumi Olsen (rumi@amazon.com) and Ryan Vanderwerf (ryvan@amazon.com)
 
