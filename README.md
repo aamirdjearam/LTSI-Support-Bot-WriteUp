@@ -65,5 +65,13 @@ AWS Identity and Access Management (IAM) enables you to manage access to AWS ser
 "AWS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services. This event history simplifies security analysis, resource change tracking, and troubleshooting. In addition, you can use CloudTrail to detect unusual activity in your AWS accounts. These capabilities help simplify operational analysis and troubleshooting." (https://aws.amazon.com/cloudtrail/)
 
 
+### Preparation
+
+To prepare it's important to understand how the different systems interact with each other and which permissions need to be enabled for them to access the required data. It's important to follow the AWS Best Practices which specifically state **GRANT LEAST PRIVILEGE** which is why there is two seperate IAM roles for the lambda functions.
+
 ![LTSI Support Bot](https://i.imgur.com/44oVJl0.png)
+
+The bot will interface with the customer and if the customer is just looking to get redirected to the appropriate help page, the bot will pull a saved version of that webpage or tutorial video from a private S3 Bucket (private due to HIPAA requirements). If the request is level 2 helpdesk or higher, the bot will generate an e-mail ticket that is already pre-formatted which will be sent to the correct LTSI Support e-mail address.
+
+
 
