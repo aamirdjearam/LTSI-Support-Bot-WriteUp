@@ -65,5 +65,5 @@ AWS Identity and Access Management (IAM) enables you to manage access to AWS ser
 "AWS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services. This event history simplifies security analysis, resource change tracking, and troubleshooting. In addition, you can use CloudTrail to detect unusual activity in your AWS accounts. These capabilities help simplify operational analysis and troubleshooting." (https://aws.amazon.com/cloudtrail/)
 
 
-![LTSI Support Bot](https://imgur.com/gallery/DbKl4Cr)
+![LTSI Support Bot](https://i.imgur.com/44oVJl0.png)
 
