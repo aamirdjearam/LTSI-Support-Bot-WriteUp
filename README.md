@@ -4,11 +4,11 @@
 
 ## Introduction
 
-After working with the LTSI (Learning and Support Technology and Innovation) team at UVIC, I came to realize the sheer amount of people power required to organize and respond to tickets accordingly. I had suggested during a meeting that we create a sort of fillable form instead of the e-mail system that we use but recently came up with the idea of making a support bot for the UVic Support website instead.
+After working with the LTSI (Learning and Support Technology and Innovation) team at UVIC, I came to realize the sheer amount of people power required to organize and respond to tickets accordingly. I had suggested during a meeting that we create a sort of fillable form instead of the e-mail system that we use but recently decided that a support bot would increase efficiency even more.
 
-This bot will be powered using Amazon Lex and be roughly based on the [Amazon Lex Support Bot Tutorial](https://github.com/aws-samples/amazon-lex-support-bot/edit/master/README.md) although this specific bot will also incorporate a lambda function that ties into SNS and possibly even Amazon Connect (depending on time constraints)
+This bot will be powered using Amazon Lex and be roughly based on the [Amazon Lex Support Bot Tutorial](https://github.com/aws-samples/amazon-lex-support-bot/edit/master/README.md) although this specific bot will also incorporate a function that ties into SNS and possibly even Amazon Connect (depending on time constraints)
 
-Currently a ticket handler needs to manually read through every incoming ticket in our RT system and assign it accordingly which can often be a tedious process. The bot's objective is to mitigate this and to answer simple questions by redirecting clients to the correct resources.
+Currently a ticket handler needs to manually read through every incoming ticket in our RT system and assign it accordingly which can often be a tedious process. The bot's objective is to mitigate this and to answer simple questions by redirecting clients to the correct resources. Essentially replacing a Level 1 Helpdesk position.
 
 Before I start, I'd like to acknowledge the creators of the original AWS Support Bot Guide: Rumi Olsen (rumi@amazon.com) and Ryan Vanderwerf (ryvan@amazon.com)
 
