@@ -71,7 +71,10 @@ To prepare it's important to understand how the different systems interact with 
 
 ![LTSI Support Bot](https://i.imgur.com/44oVJl0.png)
 
-The bot will interface with the customer and if the customer is just looking to get redirected to the appropriate help page, the bot will pull a saved version of that webpage or tutorial video from a private S3 Bucket (private due to HIPAA requirements). If the request is level 2 helpdesk or higher, the bot will generate an e-mail ticket that is already pre-formatted which will be sent to the correct LTSI Support e-mail address.
+The bot will interface with the customer and if the customer is just looking to get redirected to the appropriate help page, the bot will pull a saved version of that webpage or tutorial video from a private S3 Bucket (private due to HIPAA requirements). If the request is level 2 helpdesk or higher, the bot will generate an e-mail ticket that is already pre-formatted which will be sent to the correct LTSI Support e-mail address. By having pre-formatted e-mails, the team is able to quickly respond to support requests and have the correct team member handle tickets. It also makes data analysis easier if the tickets can be pre-sorted.
 
-The
+### Creation
+
+
+
 
