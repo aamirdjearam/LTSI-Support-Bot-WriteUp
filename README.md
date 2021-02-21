@@ -8,6 +8,8 @@ After working with the LTSI (Learning and Support Technology and Innovation) tea
 
 This bot will be powered using Amazon Lex and be roughly based on the [Amazon Lex Support Bot Tutorial](https://github.com/aws-samples/amazon-lex-support-bot/edit/master/README.md) although this specific bot will also incorporate a function that ties into SNS and possibly even Amazon Connect (depending on time constraints)
 
+This bot will also draw off of the document search bot built by Akash Jain and Rahul Kulkarni located [here](https://aws.amazon.com/blogs/machine-learning/build-a-document-search-bot-using-amazon-lex-and-amazon-elasticsearch-service/). While it will utilize relatively the same document search method it will also be capable of indexing videos (for video tutorials). It will not use cognito as well since users do not need to be authenticated (no privacy violations), this will also serve to be a form of cost-optomization.
+
 Currently a ticket handler needs to manually read through every incoming ticket in our RT system and assign it accordingly which can often be a tedious process. The bot's objective is to mitigate this and to answer simple questions by redirecting clients to the correct resources. Essentially replacing a Level 1 Helpdesk position.
 
 Before I start, I'd like to acknowledge the creators of the original AWS Support Bot Guide: Rumi Olsen (rumi@amazon.com) and Ryan Vanderwerf (ryvan@amazon.com)
@@ -75,6 +77,6 @@ The bot will interface with the customer and if the customer is just looking to 
 
 ### Creation
 
-
+To start we will be building off of the template created by Akash and Rahul. In their template they have pre-configured an S3 Bucket, an Elasticache Cluster, two Lambda functions for indexing from the S3 Bucket into the cluster and from the pulling the correct data from the cluster into Lex. I will also include a step by step guide on how to build the model from scratch located here. 
 
 
