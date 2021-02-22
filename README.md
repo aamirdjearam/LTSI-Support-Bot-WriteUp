@@ -79,4 +79,6 @@ The bot will interface with the customer and if the customer is just looking to 
 
 To start we will be building off of the template created by Akash and Rahul. In their template they have pre-configured an S3 Bucket, an Elasticache Cluster, two Lambda functions for indexing from the S3 Bucket into the cluster and from the pulling the correct data from the cluster into Lex. I will also include a step by step guide on how to build the model from scratch located here. 
 
+Below is an image of what the template looks like in designer. 
+
 
