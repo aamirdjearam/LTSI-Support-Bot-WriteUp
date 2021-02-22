@@ -6,6 +6,15 @@
 
 After working with the LTSI (Learning and Support Technology and Innovation) team at UVIC, I came to realize the sheer amount of people power required to organize and respond to tickets accordingly. I had suggested during a meeting that we create a sort of fillable form instead of the e-mail system that we use but recently decided that a support bot would increase efficiency even more.
 
+Lets layout the goals required by the machine and then select the ideal services and method of administration accordingly:
+
+* Needs to interface with users via Text message
+* Needs to be able to be hooked into the UVIC website
+* Needs to be able to be able to play Hands on Video Tutorials
+* Needs to be able to pull up UVic Text tutorials
+* Needs to be able to generate RT Ticket E-mails
+
+
 This bot will be powered using Amazon Lex and be roughly based on the [Amazon Lex Support Bot Tutorial](https://github.com/aws-samples/amazon-lex-support-bot/edit/master/README.md) although this specific bot will also incorporate a function that ties into SNS and possibly even Amazon Connect (depending on time constraints)
 
 This bot will also draw off of the document search bot built by Akash Jain and Rahul Kulkarni located [here](https://aws.amazon.com/blogs/machine-learning/build-a-document-search-bot-using-amazon-lex-and-amazon-elasticsearch-service/). While it will utilize relatively the same document search method it will also be capable of indexing videos (for video tutorials). It will not use cognito as well since users do not need to be authenticated (no privacy violations), this will also serve to be a form of cost-optomization.
@@ -80,5 +89,9 @@ The bot will interface with the customer and if the customer is just looking to 
 To start we will be building off of the template created by Akash and Rahul. In their template they have pre-configured an S3 Bucket, an Elasticache Cluster, two Lambda functions for indexing from the S3 Bucket into the cluster and from the pulling the correct data from the cluster into Lex. I will also include a step by step guide on how to build the model from scratch located here. 
 
 Below is an image of what the template looks like in designer. 
+
+
+References:
+https://docs.aws.amazon.com/lex/latest/dg/security_iam_service-with-iam.html
 
 
